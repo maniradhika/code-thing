@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Most</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <style>
+        body{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: lightblue;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            display: inline-grid;
+            gap: 20px;
+            background-color: grey;
+            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .field{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        button{
+            background-color: royalblue;
+            color: white;
+            padding: 5px 10px 5px 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+            font-weight: bold;
+
+        }
+        h2{
+            text-align: center;
+        }
+        h1{
+            color: red;
+            text-shadow: 2px 2px black;
+        }
+        a{
+            text-align: center;
+            color:white;
+            background-color: blue;
+            border-radius: 10px; 
+            text-decoration: none;
+            display: inline-block;
+
+        }
+        a:hover{
+            color:gainsboro;
+            background-color:cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Most of 3 numbers</h1>
+    <form action="/most">
+        <p>Input a number in each box</p>
+        <label for="">Enter 3 numbers</label>
+        <input type="number" name="user_integer1" id="">
+        <input type="number" name="user_integer2" id="">
+        <input type="number" name="user_integer3" id="">
+        <button type="submit">Submit</button>
+        <div class = "a">
+            <a href="/">Go back</a>
+            </div>
+        {{result}}
+    </form>
+</body>
+</html>

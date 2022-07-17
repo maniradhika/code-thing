@@ -1,0 +1,10 @@
+body{
+    background-image: url("/static/photo-1491466424936-e304919aada7.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 1fr 2fr auto;
+}
+h1{
+    text-align: center;
+}
